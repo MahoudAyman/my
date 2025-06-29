@@ -1,0 +1,65 @@
+/* Critical CSS محسن للتحميل السريع */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:system-ui,-apple-system,sans-serif;font-display:swap;-webkit-font-smoothing:antialiased;text-rendering:optimizeSpeed;line-height:1.6;color:#333;background:#fff}
+img{image-rendering:optimizeSpeed;transform:translateZ(0);max-width:100%;height:auto;display:block}
+.preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:9999;display:flex;align-items:center;justify-content:center;will-change:opacity;contain:layout style paint}
+.header-area{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);contain:layout style}
+.hero-section{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;contain:layout style}
+.container{max-width:1200px;margin:0 auto;padding:0 15px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:600;transition:all .2s ease;cursor:pointer;border:none;outline:none}
+.btn-primary{background:linear-gradient(135deg,#3a7bd5,#00d2ff);color:#fff}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(58,123,213,.3)}
+.text-center{text-align:center}
+.mb-4{margin-bottom:1rem}
+.mb-8{margin-bottom:2rem}
+.text-xl{font-size:1.25rem}
+.text-2xl{font-size:1.5rem}
+.text-3xl{font-size:1.875rem}
+.text-4xl{font-size:2.25rem}
+.font-bold{font-weight:700}
+.font-semibold{font-weight:600}
+.text-primary{color:#3a7bd5}
+.text-white{color:#fff}
+.bg-white{background:#fff}
+.bg-primary{background:#3a7bd5}
+.rounded{border-radius:.375rem}
+.rounded-lg{border-radius:.5rem}
+.rounded-full{border-radius:9999px}
+.shadow{box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.shadow-lg{box-shadow:0 10px 15px rgba(0,0,0,.1)}
+.flex{display:flex}
+.items-center{align-items:center}
+.justify-center{justify-content:center}
+.justify-between{justify-content:space-between}
+.gap-4{gap:1rem}
+.p-4{padding:1rem}
+.px-4{padding-left:1rem;padding-right:1rem}
+.py-2{padding-top:.5rem;padding-bottom:.5rem}
+.py-4{padding-top:1rem;padding-bottom:1rem}
+.mt-4{margin-top:1rem}
+.mt-8{margin-top:2rem}
+.relative{position:relative}
+.absolute{position:absolute}
+.fixed{position:fixed}
+.top-0{top:0}
+.left-0{left:0}
+.right-0{right:0}
+.bottom-0{bottom:0}
+.z-10{z-index:10}
+.z-50{z-index:50}
+.w-full{width:100%}
+.h-full{height:100%}
+.min-h-screen{min-height:100vh}
+.overflow-hidden{overflow:hidden}
+.transition-all{transition:all .15s ease;will-change:transform,opacity}
+.hover\:scale-105:hover{transform:scale(1.05)}
+.hover\:shadow-lg:hover{box-shadow:0 10px 15px rgba(0,0,0,.1)}
+@media (max-width:768px){
+.text-3xl{font-size:1.5rem}
+.text-4xl{font-size:1.875rem}
+.px-4{padding-left:.5rem;padding-right:.5rem}
+}
+@media (prefers-reduced-motion:reduce){
+*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
